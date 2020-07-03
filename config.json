@@ -1,0 +1,8 @@
+{
+  "development": {
+    "MONGODB_URI": "mongodb://localhost/NewJsonPlaceholder"
+  },
+  "production": {
+    "MONGODB_URI": "mongodb+srv://salman521:sa121120925510@newjsoncluster-nhdkz.mongodb.net/test?retryWrites=true&w=majority"
+  }
+}

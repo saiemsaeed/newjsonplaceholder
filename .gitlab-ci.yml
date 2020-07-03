@@ -1,0 +1,16 @@
+image: node:12.10.0
+
+stages:
+  - deploy
+
+deploy_develop:
+  stage: deploy
+  image: ruby:latest
+  script:
+    - export PATH=$PATH:/usr/local/bundle/bin
+    - apt-get update -qy
+    - apt-get install -y ruby-dev --allow-unauthenticated
+    - gem install dpl
+    - dpl --provider=heroku --app=newjsonplaceholder --api-key=f3faab65-d540-439e-b57c-723929362ce3
+  only:
+    - master

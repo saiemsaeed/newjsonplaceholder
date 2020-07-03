@@ -1,0 +1,25 @@
+{
+  "name": "new-json-placeholder",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@hileets:hileets/new-json-placeholder.git"
+  },
+  "author": "Hileets",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "js2xmlparser": "^4.0.0",
+    "jsontoxml": "^1.0.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.7",
+    "nodemon": "^1.19.4",
+    "xml-js": "^1.6.11"
+  }
+}
